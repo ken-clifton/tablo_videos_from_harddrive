@@ -20,8 +20,6 @@ from Metadata
 WHERE
 recordingID > 0
 and length(startTime) > 0 
-and (title like 'Law%' or title like 'The Law%')
---and title like 'Y%'
 order by title
 '''
 '''
