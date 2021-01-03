@@ -145,8 +145,5 @@ out, err = pipe.communicate()
 print("ffmpeg concatenation of files completed. Command results follow:")
 print(out)
 
-# old line from testing command (before using subprocess lib
-#os.system('ffmpeg -f concat -safe 0 -i "/tmp/video_seg_list.txt" -c copy -bsf:a aac_adtstoasc -movflags +faststart -y ~/Videos/video.mp4')
-
 # remove the temp file
 pathlib.Path(video_segments_textfile).unlink()
