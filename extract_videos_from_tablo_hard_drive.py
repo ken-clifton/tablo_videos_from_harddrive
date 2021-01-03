@@ -40,14 +40,11 @@ import subprocess
 
 # Define the mount point of the tablo hard drive, ie. the long text a49a...
 # On Ubuntu right-click hard-drive icon and properties, or use Disks tool
-tablo_harddrive_mountpoint = "/media/pclifton/a49a30f0-ebc3-4e53-b467-78bde47a99d1"
+tablo_harddrive_mountpoint = "/media/clifton/a49a30f0-ebc3-4e53-b467-78bde47a99d1"
 
 # change the following to the ID of the recording from the tablo.db
 # this is found using DB Browser and SQL query as shown in comments above
 video_folder_ID = "791164"
-
-# newer hard drive id
-# tablo_harddrive_mountpoint = "/media/pclifton/41602446-6958-44ca-920c-6637d106df71"
 
 mount_path = pathlib.Path(tablo_harddrive_mountpoint)
 
